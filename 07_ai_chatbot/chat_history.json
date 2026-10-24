@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "Hi! My name is Ardhy and I am building 7 Python mini projects today."
+  },
+  {
+    "role": "assistant",
+    "content": "[Claude SDK Ready | Turn #1] Received: \"Hi! My name is Ardhy and I am building 7 Python mini projects today.\". (Set ANTHROPIC_API_KEY in .env for live Claude API calls; conversation history has 1 messages.)"
+  },
+  {
+    "role": "user",
+    "content": "What is my name and what am I building?"
+  },
+  {
+    "role": "assistant",
+    "content": "[Claude Memory Mode] I remember our 1 earlier message(s)! You previously said: \"Hi! My name is Ardhy and I am building 7 Python mini projects today.\"."
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "question": "Which built-in Python module generates cryptographically strong random numbers suitable for passwords?",
+    "options": ["random", "secrets", "hashlib", "math"],
+    "answer": "secrets",
+    "explanation": "The 'secrets' module is used for generating cryptographically strong random numbers suitable for managing data such as passwords and security tokens."
+  },
+  {
+    "id": 2,
+    "question": "What is the time complexity of looking up a key in a Python dictionary on average?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": "O(1)",
+    "explanation": "Python dictionaries are implemented as hash tables, providing O(1) average-case lookup time."
+  },
+  {
+    "id": 3,
+    "question": "Which standard library module provides an object-oriented interface for filesystem paths?",
+    "options": ["os.path", "shutil", "pathlib", "glob"],
+    "answer": "pathlib",
+    "explanation": "pathlib offers classes representing filesystem paths with semantics appropriate for different operating systems."
+  },
+  {
+    "id": 4,
+    "question": "Which SQL clause is used to aggregate rows that have the same values into summary rows?",
+    "options": ["ORDER BY", "WHERE", "GROUP BY", "HAVING"],
+    "answer": "GROUP BY",
+    "explanation": "GROUP BY groups rows sharing a property so aggregate functions like SUM() or COUNT() can be applied per group."
+  },
+  {
+    "id": 5,
+    "question": "In BeautifulSoup, which method returns all matching HTML elements as a list?",
+    "options": ["find()", "find_all()", "search_all()", "get_elements()"],
+    "answer": "find_all()",
+    "explanation": "soup.find_all() scans the entire document and returns a ResultSet (list) of matching tags."
+  },
+  {
+    "id": 6,
+    "question": "What does HTTP status code 200 indicate in an API response?",
+    "options": ["Resource Not Found", "Internal Server Error", "OK / Success", "Unauthorized"],
+    "answer": "OK / Success",
+    "explanation": "HTTP 200 OK indicates that the request has succeeded."
+  },
+  {
+    "id": 7,
+    "question": "Which context manager syntax ensures a file is automatically closed after reading in Python?",
+    "options": ["try ... finally", "with open(...) as f:", "using open(...) as f:", "auto open(...)"],
+    "answer": "with open(...) as f:",
+    "explanation": "The 'with' statement invokes the file object's context manager (__enter__ and __exit__), guaranteeing closure."
+  }
+]
