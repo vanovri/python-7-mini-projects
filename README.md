@@ -33,3 +33,8 @@ streamlit run dashboard.py
 ```bash
 pytest -v
 ```
+
+## Sample Chart Output (Project 01: Expense Tracker)
+
+![Expense Report Chart](01_expense_tracker/expense_report.png)
+
