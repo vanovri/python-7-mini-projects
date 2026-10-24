@@ -1,0 +1,176 @@
+{
+  "01_expense_tracker/app.py": {
+    "mtime": 1792808732.0851655,
+    "seen": 1792809103.4743557,
+    "ast_hash": "013e0cceaf7c9c029144165a06305da3",
+    "semantic_hash": ""
+  },
+  "01_expense_tracker/db.py": {
+    "mtime": 1792808730.6486573,
+    "seen": 1792809103.4743557,
+    "ast_hash": "657e1cae90b3414929a50f0fb8b87f30",
+    "semantic_hash": ""
+  },
+  "02_password_generator/app.py": {
+    "mtime": 1792808734.6287966,
+    "seen": 1792809103.4743557,
+    "ast_hash": "c563437f6a3565aa070b0fea81d5f891",
+    "semantic_hash": ""
+  },
+  "02_password_generator/generator.py": {
+    "mtime": 1792808733.0517905,
+    "seen": 1792809103.4743557,
+    "ast_hash": "ca2637a3b803b3b485c50cfb312be924",
+    "semantic_hash": ""
+  },
+  "03_quiz_app/app.py": {
+    "mtime": 1792808785.4489405,
+    "seen": 1792809103.4743557,
+    "ast_hash": "07de6b338148e47e57f2dbaf5ff06f15",
+    "semantic_hash": ""
+  },
+  "03_quiz_app/questions.json": {
+    "mtime": 1792808782.293184,
+    "seen": 1792809103.4743557,
+    "ast_hash": "3bcf9d1e0ed26c897dd9c1a7fc645f3d",
+    "semantic_hash": ""
+  },
+  "03_quiz_app/quiz_engine.py": {
+    "mtime": 1792808783.713098,
+    "seen": 1792809103.4743557,
+    "ast_hash": "b377ad540da8e6e81de7e734d62f128b",
+    "semantic_hash": ""
+  },
+  "04_weather_app/app.py": {
+    "mtime": 1792808796.2060132,
+    "seen": 1792809103.4743557,
+    "ast_hash": "7b9d255061be0b449e9532f5f80d0e13",
+    "semantic_hash": ""
+  },
+  "04_weather_app/weather_service.py": {
+    "mtime": 1792808788.129938,
+    "seen": 1792809103.4743557,
+    "ast_hash": "3d669ad7bbb4a189c97c2f09e2e2d880",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/app.py": {
+    "mtime": 1792808846.849739,
+    "seen": 1792809103.4743557,
+    "ast_hash": "bebe35e59005cc7cd169dd85b73ea36c",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Code/automation_script.py": {
+    "mtime": 1792809100.025037,
+    "seen": 1792809103.4743557,
+    "ast_hash": "f2b815ab17856f8344bd4c09722d2287",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/organizer.py": {
+    "mtime": 1792809095.7276826,
+    "seen": 1792809103.4743557,
+    "ast_hash": "14b7e4d477a16d921cb86fef1ae37439",
+    "semantic_hash": ""
+  },
+  "06_web_scraper/app.py": {
+    "mtime": 1792808849.5242352,
+    "seen": 1792809103.4743557,
+    "ast_hash": "7943cadd95e75087b8741c885eb68b8b",
+    "semantic_hash": ""
+  },
+  "06_web_scraper/scraper.py": {
+    "mtime": 1792809003.0759068,
+    "seen": 1792809103.4743557,
+    "ast_hash": "d6f21ae11ad1690da63a6eadc59d12db",
+    "semantic_hash": ""
+  },
+  "07_ai_chatbot/app.py": {
+    "mtime": 1792808853.821104,
+    "seen": 1792809103.4743557,
+    "ast_hash": "6020e0eec753d0d5a95a9545c93ed2ee",
+    "semantic_hash": ""
+  },
+  "07_ai_chatbot/chat_history.json": {
+    "mtime": 1792809031.689235,
+    "seen": 1792809103.4743557,
+    "ast_hash": "8a391339dbdaa9bc9096b9b9fe86707e",
+    "semantic_hash": ""
+  },
+  "07_ai_chatbot/chatbot.py": {
+    "mtime": 1792808852.5002508,
+    "seen": 1792809103.4743557,
+    "ast_hash": "e6ec3fd91638e45ac6c7ae3495ae6818",
+    "semantic_hash": ""
+  },
+  "dashboard.py": {
+    "mtime": 1792808912.9113371,
+    "seen": 1792809103.4743557,
+    "ast_hash": "25d0725f5c8aaeddb2a5b2b81c29493f",
+    "semantic_hash": ""
+  },
+  "run_all_demos.py": {
+    "mtime": 1792809001.9084935,
+    "seen": 1792809103.4743557,
+    "ast_hash": "3b8b81601d7644f1e14d28d0625bfc0e",
+    "semantic_hash": ""
+  },
+  "tests/test_all_projects.py": {
+    "mtime": 1792808914.4875562,
+    "seen": 1792809103.4743557,
+    "ast_hash": "e09268e63e21a41523a20d1f63a99fda",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792808933.5613136,
+    "seen": 1792809103.4743557,
+    "ast_hash": "0c515be3f42522722e381a32fbead3a7",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1792808916.4238489,
+    "seen": 1792809103.4743557,
+    "ast_hash": "83bb5cf6bd3bde8760ee280cf89ba2dd",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Docs/resume_2026.pdf": {
+    "mtime": 1792809100.0210395,
+    "seen": 1792809103.4743557,
+    "ast_hash": "55b0a26b2088b63cb9996fe2329c5113",
+    "semantic_hash": ""
+  },
+  "01_expense_tracker/expense_report.png": {
+    "mtime": 1792809007.6868505,
+    "seen": 1792809103.4743557,
+    "ast_hash": "af667528b00ef7b20b523465e05d0eed",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Images/ui_mockup.png": {
+    "mtime": 1792809100.01904,
+    "seen": 1792809103.4743557,
+    "ast_hash": "8ccc8881b062f2a2601cdb0fd24b12e3",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Images/vacation_photo.jpg": {
+    "mtime": 1792809100.01904,
+    "seen": 1792809103.4743557,
+    "ast_hash": "0fae9df975fdb5537bb5769558a75af3",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Audio/podcast_episode.mp3": {
+    "mtime": 1792809100.0240374,
+    "seen": 1792809103.4743557,
+    "ast_hash": "098c199f303a709b66e299d5720136f4",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Videos/screen_recording.mov": {
+    "mtime": 1792809100.0230374,
+    "seen": 1792809103.4743557,
+    "ast_hash": "a0fd32fe1ec995dda33a42fa94ff1a73",
+    "semantic_hash": ""
+  },
+  "05_file_organizer/demo_downloads/Videos/tutorial_clip.mp4": {
+    "mtime": 1792809100.0220406,
+    "seen": 1792809103.4743557,
+    "ast_hash": "51de34e314cfcf76fec0af5f679ce3b0",
+    "semantic_hash": ""
+  }
+}

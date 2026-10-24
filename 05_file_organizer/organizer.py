@@ -79,7 +79,7 @@ def create_demo_messy_folder(demo_dir: Path) -> Path:
         "automation_script.py",
     ]
     for fname in dummy_files:
-        (demo_dir / fname).write_text(f"Dummy content for {fname}\n", encoding="utf-8")
+        (demo_dir / fname).write_text(f"# Dummy content for {fname}\n", encoding="utf-8")
     return demo_dir
 
 
