@@ -1,6 +1,8 @@
 # 7 Python Mini Projects (@the.natasha.ai)
 
-Complete implementation of all 7 Python Mini Projects from [`@the.natasha.ai` Instagram carousel (`De10gSgE-LW`)](https://www.instagram.com/p/De10gSgE-LW/):
+These are AI-assisted practice implementations. Seven local smoke tests passed on 27 October 2026. The chatbot has a rule-based fallback and an optional Anthropic API path. The smoke tests do not verify paid API calls, model availability or response quality. Weather and scraping depend on external services or fallback responses. Organizer tests use temporary demo files.
+
+Seven practice implementations inspired by [`@the.natasha.ai` Instagram carousel (`De10gSgE-LW`)](https://www.instagram.com/p/De10gSgE-LW/):
 
 | # | Project | Core Workflow | Tech Stack | Entry Point |
 |---|---------|---------------|------------|-------------|
