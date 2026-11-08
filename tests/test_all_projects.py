@@ -20,6 +20,9 @@ from weather_service import get_weather
 from organizer import create_demo_messy_folder, organize_folder
 from scraper import scrape_quotes, save_to_csv
 from chatbot import ChatSession
+import weather_service
+import scraper
+from types import SimpleNamespace
 
 
 def test_01_expense_tracker(tmp_path: Path):
@@ -56,12 +59,35 @@ def test_03_quiz_app():
     assert quiz.score == 1
 
 
-def test_04_weather_app():
+def test_04_weather_app(monkeypatch):
+    monkeypatch.delenv("OPENWEATHER_API_KEY", raising=False)
+    calls = []
+
+    def fake_get(url, params, timeout):
+        calls.append((url, params, timeout))
+        if "geocoding-api" in url:
+            assert params["name"] == "Delhi"
+            payload = {"results": [{"name": "Delhi", "country_code": "IN", "latitude": 28.6, "longitude": 77.2}]}
+        else:
+            assert params["latitude"] == 28.6
+            assert params["longitude"] == 77.2
+            payload = {
+                "current": {"temperature_2m": 31.5, "relative_humidity_2m": 52,
+                            "apparent_temperature": 33.0, "weather_code": 2, "wind_speed_10m": 8.4},
+                "daily": {"time": ["2026-11-08"], "temperature_2m_max": [34.0],
+                          "temperature_2m_min": [24.0], "weather_code": [2]},
+            }
+        return SimpleNamespace(json=lambda: payload, raise_for_status=lambda: None)
+
+    monkeypatch.setattr(weather_service.requests, "get", fake_get)
     data = get_weather("Delhi")
     assert "temp" in data
     assert "humidity" in data
     assert "sky" in data
     assert isinstance(data["forecast"], list) and len(data["forecast"]) > 0
+    assert data["temp"] == 31.5 and data["humidity"] == 52
+    assert data["forecast"][0]["temp"] == 29.0
+    assert len(calls) == 2
 
 
 def test_05_file_organizer(tmp_path: Path):
@@ -75,17 +101,27 @@ def test_05_file_organizer(tmp_path: Path):
     assert (demo_dir / "Archives" / "backup_bundle.zip").exists()
 
 
-def test_06_web_scraper(tmp_path: Path):
+def test_06_web_scraper(tmp_path: Path, monkeypatch):
+    html = '<div class="quote"><span class="text">A deterministic fixture.</span><small class="author">Test Author</small><div class="tags"><a class="tag">testing</a></div></div>'
+
+    def fake_get(url, headers, timeout):
+        assert url == "https://quotes.toscrape.com/" and timeout == 12
+        assert "User-Agent" in headers
+        return SimpleNamespace(text=html, encoding="utf-8", raise_for_status=lambda: None)
+
+    monkeypatch.setattr(scraper.requests, "get", fake_get)
     rows = scrape_quotes()
     assert len(rows) > 0
     assert "quote" in rows[0] and "author" in rows[0]
+    assert rows[0] == {"quote": "A deterministic fixture.", "author": "Test Author", "tags": "testing"}
     csv_file = tmp_path / "quotes.csv"
     df = save_to_csv(rows, csv_file)
     assert csv_file.exists()
     assert len(df) == len(rows)
 
 
-def test_07_ai_chatbot(tmp_path: Path):
+def test_07_ai_chatbot(tmp_path: Path, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "")
     session = ChatSession()
     r1 = session.send_message("Hello, my name is Ardhy.")
     r2 = session.send_message("Do you remember my name?")
